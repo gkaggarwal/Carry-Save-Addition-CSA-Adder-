@@ -22,7 +22,7 @@ architecture Behavioral of CSA_Adder is
 Component Adder_1bit is
     Port ( A : in  STD_LOGIC;
            B : in  STD_LOGIC;
-           Cin : in  STD_LOGIC;
+           Cin : in  STD_LOGIC:='0';
            Sum : out  STD_LOGIC;
            Carry : out  STD_LOGIC);
 end component;
