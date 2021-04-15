@@ -12,7 +12,7 @@ entity CSA_Adder is
     Port ( A : in  STD_LOGIC_VECTOR(K-1 downto 0);
            B : in  STD_LOGIC_VECTOR(K-1 downto 0);
            D : in  STD_LOGIC_VECTOR(K-1 downto 0);
-           Cin : in  STD_LOGIC;
+           Cin : in  STD_LOGIC:='0';
            Sum : out  STD_LOGIC_VECTOR(K downto 0);
            Carry : out  STD_LOGIC);
 end CSA_Adder;
@@ -22,7 +22,7 @@ architecture Behavioral of CSA_Adder is
 Component Adder_1bit is
     Port ( A : in  STD_LOGIC;
            B : in  STD_LOGIC;
-           Cin : in  STD_LOGIC:='0';
+           Cin : in  STD_LOGIC;
            Sum : out  STD_LOGIC;
            Carry : out  STD_LOGIC);
 end component;
